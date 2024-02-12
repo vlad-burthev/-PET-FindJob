@@ -1,0 +1,82 @@
+//Primary
+$primary-color-green: #47d18c;
+$primary-color-green-dark: #2eb873;
+$primary-color-green-light: #2eb873;
+
+$primary-color-blue: #1f8fff;
+$primary-color-blue-dark: #0075eb;
+$primary-color-blue-light: #85c2ff;
+
+$primary-color-orange: #faccb9;
+$primary-color-orange-dark: #f59a74;
+$primary-color-orange-light: #fcddd1;
+
+//Secondary
+$secondary-color-yellow: #fee5a4;
+$secondary-color-orange-yellow_green: #eaedb6;
+$secondary-color-orange-blue__light: #a4d8fe;
+$secondary-color-orange-purple: #aba4fe;
+$secondary-color-orange-pink: #fea4e5;
+
+//Balck
+$se__black: #2e334b;
+$se__black-dark: #252a3f;
+$se__black-ligh: #3d425a;
+
+$black: #1b2124;
+$gray: #8d9092;
+$gray-light: #c6c7c8;
+
+//Neutrals
+$neutrals-gray: #aaafbe;
+$neutrals-gray-dark: #7f879e;
+$neutrals-gray-ligh: #d4d7df;
+
+$light__gray: #f8f8fd;
+
+$l__gray: #f6f8f9;
+$l__gray_light: #f9f9f9;
+$l__gray_dark: #f3f3f3;
+
+$neutrals-white: #fff;
+$neutrals-beige: #fbf3e5;
+$neutrals-green: #d6f6e7;
+
+//Alert Color
+$alert__color-red: #ee5566;
+$alert__color-red-dark: #e60019;
+$alert__color-red-light: #f7aab2;
+
+$alert__color-red: #47d18c;
+$alert__color-red-dark: #2eb873;
+$alert__color-red-light: #b1dfc9;
+
+//font
+$font-family: "Readex Pro", sans-serif;
+$font-size-m: 16px;
+$font-size-s: 14px;
+$font-size-xs: 12px;
+$font-size-x: 18px;
+
+$line-height: 160%;
+
+@mixin font-m($weight: 400) {
+  font-weight: $weight;
+  font-size: $font-size-m;
+  line-height: $line-height;
+}
+@mixin font-x($weight: 400) {
+  font-weight: $weight;
+  font-size: $font-size-x;
+  line-height: $line-height;
+}
+@mixin font-s($weight: 400) {
+  font-weight: $weight;
+  font-size: 14px;
+  line-height: $line-height;
+}
+@mixin font-xs($weight: 400) {
+  font-weight: $weight;
+  font-size: 12px;
+  line-height: $line-height;
+}

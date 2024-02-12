@@ -1,0 +1,8 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
+
+body {
+  @include font-m(400);
+  font-family: $font-family;
+}
