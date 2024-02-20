@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+#Deploy Link <a href="https://main--jobsvacancies.netlify.app/">https://main--jobsvacancies.netlify.app/</a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Information about project
+##This is a job search platform that makes it easy and convenient for people to find jobs that match their skills, experience, and interests.
 
-Currently, two official plugins are available:
+#Functionality:
+##Easy Search: Users can search for jobs by keywords, location, job type, industry and other criteria.
+##Filter: Users can filter search results by criteria such as salary, work experience, education and skills.
+##Saving Jobs: Users can save interesting jobs to return to later.
+##Messages: Users can communicate directly with employers.
+##Resume: Users can upload their resume so employers can find it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#For This Project I Used:
+##JobsAPI
+##React
+##Redux
+##RTK Query
+##TypeScript
+##SCSS
