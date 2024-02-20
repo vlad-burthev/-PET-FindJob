@@ -1,0 +1,114 @@
+@import "../../../assets/styles/variables.scss";
+
+.card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: $neutrals-white;
+  padding: 30px 20px;
+  transition: 0.3s;
+  border: 1px solid $neutrals-gray-ligh;
+}
+
+.like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  &.active {
+    & svg {
+      fill: $alert__color-red-dark;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid $neutrals-gray-ligh;
+  padding-bottom: 20px;
+}
+
+.title {
+  color: $black;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+
+  & h4 {
+    color: $primary-color-blue;
+    margin-right: 10px;
+  }
+
+  & img {
+    width: 24px;
+    height: 24px;
+    border-radius: $border-radius;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+
+  & span {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.description {
+  margin-top: 20px;
+
+  & .employment {
+    margin: 10px 0;
+    color: $primary-color-green;
+  }
+
+  & p {
+    width: 100%;
+    line-height: 1.5rem;
+    height: 3rem;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.open {
+    & p {
+      height: 100%;
+      display: block;
+      color: $black;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+
+  & a {
+    background-color: $primary-color-orange-dark;
+    padding: 5px 15px;
+    color: $neutrals-white;
+    border-radius: 12px;
+    @include font-s(400);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $primary-color-orange;
+    }
+  }
+}

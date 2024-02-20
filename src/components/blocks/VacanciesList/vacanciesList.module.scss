@@ -1,0 +1,57 @@
+@import "../../../assets/styles/variables.scss";
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.header {
+  background-color: $neutrals-green-opacity;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-bottom: 10px;
+
+  border: 1px solid $gray-light;
+  border-radius: $border-radius;
+  z-index: 9;
+
+  & h1 {
+    margin-bottom: 10px;
+    color: $se__black;
+  }
+
+  & .input-block {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    & input {
+      width: 100%;
+      border: 1px solid $primary-color-green;
+      border-radius: $border-radius;
+      padding: 11px 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & button {
+      height: 100%;
+      right: 0;
+      top: 0;
+      border-radius: $border-radius;
+      padding: 0px 25px;
+      background-color: $primary-color-blue;
+      color: $neutrals-white;
+      position: absolute;
+      box-shadow: 0px -5px 10px $gray-light;
+      backdrop-filter: blur(5px);
+      @include font-m(600);
+      border: none;
+    }
+  }
+}

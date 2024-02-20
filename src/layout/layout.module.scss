@@ -1,3 +1,5 @@
+@import "../assets/styles/variables.scss";
+
 .wrapper {
   position: relative;
   display: grid;
@@ -5,13 +7,16 @@
     "sidebar . ."
     "sidebar main ."
     "sidebar footer footer";
-  grid-template-columns: auto minmax(320px, 1115px) auto;
-  grid-template-rows: minmax(auto, 100px) 1fr minmax(auto, 100px);
+  grid-template-columns: auto minmax(320px, 1400px) auto;
+  grid-template-rows: 0 1fr minmax(auto, 100px);
+
+  gap: 0 24px;
   height: 100vh;
 }
 
 .main {
   grid-area: main;
+  padding: 50px 0;
 }
 
 .sidebar {

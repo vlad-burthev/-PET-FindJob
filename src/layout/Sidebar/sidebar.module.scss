@@ -1,7 +1,81 @@
+@import "../../assets/styles/variables.scss";
+
 .sidebar {
-  position: fixed;
-  left: 0;
+  position: relative;
+
+  max-width: 260px;
+  width: 100%;
+
+  background-color: $neutrals-white;
+  border-right: 1px solid $l__gray;
+  box-shadow: 5px 0px 5px $l__gray-dark;
+  z-index: 10;
+}
+.nav {
+  padding: 40px 16px 0;
+
+  position: sticky;
   top: 0;
-  bottom: 0;
-  background-color: #000;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & li a {
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: $border-radius;
+
+    color: $neutrals-gray-dark;
+
+    padding: 12px 20px 12px 20px;
+
+    & .link-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+      transition: 0.2s;
+    }
+
+    & .link-icon__home {
+      background-image: url("./icons/home.svg");
+    }
+    & .link-icon__vacancies {
+      background-image: url("./icons/vacancies.svg");
+    }
+    & .link-icon__about {
+      background-image: url("./icons/about.svg");
+    }
+    & .link-icon__my-jobs {
+      background-image: url("./icons/my-jobs.svg");
+    }
+    & .link-icon__favorites {
+      background-image: url("./icons/favorites.svg");
+    }
+
+    & .link-name {
+      margin-left: 12px;
+    }
+
+    &.active {
+      color: $neutrals-white;
+      background: $primary-color-green;
+
+      & .link-icon__home {
+        background-image: url("./icons/home-active.svg");
+      }
+      & .link-icon__vacancies {
+        background-image: url("./icons/vacancies-active.svg");
+      }
+      & .link-icon__about {
+        background-image: url("./icons/about-active.svg");
+      }
+      & .link-icon__my-jobs {
+        background-image: url("./icons/my-jobs-active.svg");
+      }
+    }
+  }
 }

@@ -1,0 +1,43 @@
+@import "../../assets/styles/variables.scss";
+
+.page {
+  & h1 {
+    margin-bottom: 30px;
+    color: $primary-color-green;
+  }
+
+  & .sub-title {
+    color: $primary-color-blue;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+
+  & ul {
+    margin-left: 0;
+    & li {
+      padding-left: 20px;
+      margin: 10px 0;
+      color: $primary-color-blue;
+
+      &::before {
+        content: "-";
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.main-info {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: $primary-color-green;
+}
+
+.link {
+  & a {
+    text-decoration: underline;
+  }
+}

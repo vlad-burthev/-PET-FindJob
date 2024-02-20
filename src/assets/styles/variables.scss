@@ -41,15 +41,16 @@ $l__gray_dark: #f3f3f3;
 $neutrals-white: #fff;
 $neutrals-beige: #fbf3e5;
 $neutrals-green: #d6f6e7;
+$neutrals-green-opacity: #d6f6e755;
 
 //Alert Color
 $alert__color-red: #ee5566;
 $alert__color-red-dark: #e60019;
 $alert__color-red-light: #f7aab2;
 
-$alert__color-red: #47d18c;
-$alert__color-red-dark: #2eb873;
-$alert__color-red-light: #b1dfc9;
+$alert__color-green: #47d18c;
+$alert__color-green-dark: #2eb873;
+$alert__color-green-light: #b1dfc9;
 
 //font
 $font-family: "Readex Pro", sans-serif;
@@ -80,3 +81,6 @@ $line-height: 160%;
   font-size: 12px;
   line-height: $line-height;
 }
+
+//border
+$border-radius: 12px;

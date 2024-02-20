@@ -1,10 +1,20 @@
+import { useEffect } from "react";
 import AppRouter from "./routes/AppRouter";
-import { useGetTestQuery } from "./services/vacanciesAPI";
-// import { useGetTestMutation } from "./services/vacanciesAPI";
+import { useAppDispatch } from "./store";
+import { setFavorites } from "./store/favorites/faoritesSlices";
 
 const App = () => {
-  const { data } = useGetTestQuery("");
-  console.log(data);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    const favoritesFromStorage = localStorage.getItem("favorites");
+    if (favoritesFromStorage) {
+      const parsedFavorites = JSON.parse(favoritesFromStorage);
+      if (Array.isArray(parsedFavorites)) {
+        dispatch(setFavorites(parsedFavorites));
+      }
+    }
+  }, []);
 
   return <AppRouter />;
 };

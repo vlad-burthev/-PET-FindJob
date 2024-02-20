@@ -1,0 +1,120 @@
+@import "../../../assets/styles/variables.scss";
+
+.filter {
+  position: sticky;
+  top: 20px;
+  background-color: $neutrals-white;
+  border-radius: $border-radius;
+  height: max-content;
+  padding: 24px 20px;
+  border: 1px solid $neutrals-gray-ligh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.filter-type {
+  & h3 {
+    color: $se__black;
+    margin-bottom: 5px;
+  }
+}
+
+.pub-date {
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+    margin: 0;
+  }
+
+  & span {
+    background-color: $primary-color-green;
+    color: $neutrals-white;
+    @include font-xs(400);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &.active {
+      background-color: $primary-color-blue;
+    }
+
+    &:hover {
+      background-color: $primary-color-green-dark;
+    }
+  }
+}
+
+.work-type {
+  & ul {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    margin: 0;
+
+    & li {
+      cursor: pointer;
+      & input {
+        display: none;
+      }
+
+      &.checked > label::before {
+        background-color: $primary-color-green !important;
+      }
+
+      & label {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background-color: $neutrals-white;
+          border: 1px solid $primary-color-green;
+          margin-right: 5px;
+        }
+      }
+      & > * {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.employment {
+  &-list {
+    margin: 0;
+    padding: 0;
+
+    & li {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: max-content;
+      padding: 0px 10px 0px 25px;
+
+      &.active::before {
+        background-color: $primary-color-green;
+      }
+
+      &::before {
+        position: absolute;
+        border-radius: 4px;
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $primary-color-green;
+      }
+    }
+  }
+}

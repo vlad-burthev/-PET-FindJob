@@ -1,0 +1,55 @@
+@import "../../../assets/styles/variables.scss";
+
+.countries-block {
+  & h3 {
+    color: $se__black;
+  }
+}
+
+.input-block {
+  & input {
+    display: block;
+    width: 100%;
+    padding: 5px 16px;
+    border-radius: $border-radius;
+    border: 2px solid $primary-color-green-light;
+    color: $se__black-ligh;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: 2px solid $primary-color-green-light;
+    }
+  }
+}
+
+.list {
+  padding: 0;
+
+  & li {
+    padding: 12px 27px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: $border-radius;
+
+    &:focus {
+      outline: 2px solid $primary-color-green-light;
+    }
+
+    &:hover {
+      background-color: $neutrals-green;
+    }
+
+    & img {
+      aspect-ratio: 4/3;
+      object-fit: contain;
+      width: 28px;
+      height: 24px;
+    }
+
+    & span {
+      margin-left: 10px;
+    }
+  }
+}

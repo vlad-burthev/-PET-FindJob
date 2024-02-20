@@ -1,0 +1,13 @@
+<svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="dollar-circle" width="20.000000" height="20.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="Vector" d="M7.22656 11.9414C7.22656 13.0164 8.05176 13.8831 9.07666 13.8831L11.1685 13.8831C12.0601 13.8831 12.7847 13.1248 12.7847 12.1914C12.7847 11.1748 12.3433 10.8164 11.6851 10.583L8.32666 9.4165C7.66846 9.18311 7.22656 8.82471 7.22656 7.80811C7.22656 6.87476 7.95166 6.11646 8.84326 6.11646L10.9351 6.11646C11.96 6.11646 12.7847 6.98315 12.7847 8.05811" stroke="#7F879E" stroke-opacity="1.000000" stroke-width="1.200000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M10 5L10 5" stroke="#7F879E" stroke-opacity="1.000000" stroke-width="1.200000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M10 18.3335C5.39746 18.3335 1.6665 14.6025 1.6665 10C1.6665 5.39771 5.39746 1.66675 10 1.66675C14.6021 1.66675 18.333 5.39771 18.333 10C18.333 14.6025 14.6021 18.3335 10 18.3335Z" stroke="#7F879E" stroke-opacity="1.000000" stroke-width="1.200000" stroke-linejoin="round"/>
+	<g opacity="0.000000">
+		<path id="Vector" d="M20 0L0 0L0 20L20 20L20 0ZM1.2002 18.8L1.2002 1.19995L18.7998 1.19995L18.7998 18.8L1.2002 18.8Z" fill="#7F879E" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

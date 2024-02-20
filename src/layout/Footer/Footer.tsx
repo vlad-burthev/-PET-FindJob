@@ -6,7 +6,11 @@ interface FooterProps {
 }
 
 const Footer: FC<FooterProps> = ({ className }) => {
-  return <footer className={`${styles.footer} ${className}`}>footer</footer>;
+  return (
+    <footer className={`${styles.footer} ${className}`}>
+      Developed by <a href="https://github.com/vlad-burthev">Vlad Burtsev</a>
+    </footer>
+  );
 };
 
 export default Footer;

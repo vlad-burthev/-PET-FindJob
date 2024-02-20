@@ -3,29 +3,39 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const vacanciesAPI = createApi({
   reducerPath: "vacanciesAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://findwork.dev/api/jobs/",
+    baseUrl: "https://jobs-api14.p.rapidapi.com/list",
     credentials: "same-origin",
     method: "PATCH",
     prepareHeaders: (headers) => {
       headers.set(
-        "Authorization",
-        "Token 380a5124ce9fe16b64a9000c04f4935a00215510"
+        "X-RapidAPI-Key",
+        "20f608a9a5msh87e2814b43bbe5fp1f7168jsn1fc93d55ecaa"
       );
+      headers.set("X-RapidAPI-Host", "jobs-api14.p.rapidapi.com");
       return headers;
     },
   }),
   endpoints: (build) => ({
-    getTest: build.query({
-      query: () => ({
+    getVacancies: build.query({
+      query: ({
+        datePosted,
+        workType,
+        selectedCountry,
+        employments,
+        jobTitle,
+      }) => ({
         url: "",
         method: "GET",
-        headers: {
-          Authorization: "Token 380a5124ce9fe16b64a9000c04f4935a00215510",
-          "Access-Control-Allow-Origin": " https://findwork.dev/api/jobs/",
+        params: {
+          query: jobTitle !== null ? jobTitle : "FrontEnd",
+          location: selectedCountry,
+          remoteOnly: workType,
+          datePosted,
+          employmentTypes: employments.join(";"),
         },
       }),
     }),
   }),
 });
 
-export const { useGetTestQuery } = vacanciesAPI;
+export const { useGetVacanciesQuery } = vacanciesAPI;

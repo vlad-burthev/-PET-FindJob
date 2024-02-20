@@ -1,0 +1,52 @@
+@import "../../assets/styles/variables.scss";
+
+.page {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
+
+.search-params {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-block {
+  & h3 {
+    color: $se__black;
+  }
+
+  & input {
+    display: block;
+    width: 100%;
+    padding: 5px 16px;
+    border-radius: $border-radius;
+    border: 2px solid $primary-color-green-light;
+    color: $se__black-ligh;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: 2px solid $primary-color-green-light;
+    }
+  }
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  & button {
+    background-color: $primary-color-blue;
+    color: $neutrals-white;
+    @include font-m(600);
+    font-size: 20px;
+    padding: 5px 100px;
+    border: none;
+    border-radius: $border-radius;
+  }
+}

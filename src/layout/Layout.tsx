@@ -13,7 +13,6 @@ const Layout: FC<LayoutProps> = () => {
       <Sidebar className={styles.sidebar} />
       <main className={styles.main}>
         <Outlet />
-        dasd
       </main>
       <Footer className={styles.footer} />
     </div>
